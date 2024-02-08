@@ -9,7 +9,7 @@ const routes: Routes = [
   { path: 'inicio', component: InicioComponent },
   { path: 'login', component: LoginComponent },
   { path: 'restrito', component: RestritoComponent, canActivate: [GuardGuard]},
-  { path: '', redirectTo: '/inicio', pathMatch: 'full' }
+  { path: '', redirectTo: './inicio', pathMatch: 'full' }
 ];
 
 @NgModule({

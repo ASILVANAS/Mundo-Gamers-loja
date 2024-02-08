@@ -9,8 +9,10 @@ import { Router } from '@angular/router';
 })
 
 export class LoginComponent implements OnInit {
+
   usuario!: string;
   senha!: string;
+  
   constructor(private _loginService: LoginService, private _router: Router) { }
   
   ngOnInit(): void {

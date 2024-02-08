@@ -28,6 +28,7 @@ import { CadastroProdutoComponent } from './restrito/cadastro-produto/cadastro-p
 import { ListaProdutoComponent } from './restrito/lista-produto/lista-produto.component';
 import { MenuRestritoComponent } from './restrito/menu-restrito/menu-restrito.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,9 +59,7 @@ import { MenuRestritoComponent } from './restrito/menu-restrito/menu-restrito.co
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule
-    
-    
-    
+       
   ],
   providers: [],
   bootstrap: [AppComponent]

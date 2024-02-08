@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from
+import { Component, HostListener, OnDestroy, OnInit } from
   '@angular/core';
 import { LoginService } from './login.service';
 
@@ -13,7 +13,7 @@ export class AppComponent implements OnInit, OnDestroy {
   
   constructor(private _loginService: LoginService) {}
   
-  ngOnInit(): void {
+  ngOnInit(){
     this._loginService.getMostraMenu().subscribe(res => {
       this.mostrarMenu = res;
     })
